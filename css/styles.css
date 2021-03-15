@@ -1,21 +1,11 @@
-/* Raleway 700
-
-Roboto 500 900 700 400 */
-
-/* цвет основного цвета #212121; */
-/* цвет контактов хеддер #757575; */ /* цвет абзаца наши преимущества, наша команда  #757575 */
-/* цвет лого #2196F3 */
-/* цвет герой #FFFFFF */
-/* цвет адрес футер #FFFFFF */
-/* цвет контактов футер color: rgba(255, 255, 255, 0.6); */
-/* кнопки background: #2196F3; текст кнопки #FFFFFF */
-
-/* поставить комментарии */
 :root {
   --primari-text-color: #757575;
   --title-text-color: #212121;
-  --accent-color: #ffffff;
-  --accent-dg-color: #2f303a;
+  --accent-text-color: #ffffff;
+  --accent-bg-color: #2f303a;
+  --accent-btn-bg: #2196f3;
+  --accent-link-color: #2196f3;
+  --main-logo-color: #2196f3;
 }
 
 body {
@@ -32,13 +22,14 @@ body {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  color: #2196f3;
+  color: var(--main-logo-color);
   text-decoration: none;
 }
 
 .colortext.header {
   color: var(--title-text-color);
 }
+
 /* button */
 .button.secondary {
   color: var(--title-text-color);
@@ -46,18 +37,18 @@ body {
 }
 .button.secondary:hover,
 .button.secondary:focus {
-  color: var(--accent-color);
-  background: #2196f3;
+  color: var(--accent-text-color);
+  background: var(--accent-btn-bg);
 }
 
 .button.primari {
-  color: var(--accent-color);
-  background: #2196f3;
+  color: var(--accent-text-color);
+  background: var(--accent-btn-bg);
 }
 
 .button.primari:hover,
 .button.primari:focus {
-  color: var(--accent-color);
+  color: var(--accent-text-color);
   background: #188ce8;
 }
 .button {
@@ -71,7 +62,7 @@ body {
 }
 
 /* Шапка */
-d d .page-header {
+.page-header {
   background: #ffffff;
 }
 /*Навигация*/
@@ -85,16 +76,16 @@ d d .page-header {
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-link-color);
 }
 .site-nav .link.current {
-  color: #2196f3;
+  color: var(--accent-link-color);
 }
-/* Контакты */
 
+/* Контакты */
 .contacts .link:hover,
 .contacts .link:focus {
-  color: #2196f3;
+  color: var(--accent-link-color);
 }
 
 .header .link {
@@ -121,6 +112,7 @@ d d .page-header {
   text-transform: uppercase;
   color: var(--title-text-color);
 }
+
 /* Герой */
 .hero {
   font-weight: 900;
@@ -129,19 +121,18 @@ d d .page-header {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  background: var(--accent-dg-color);
-  color: var(--accent-color);
+  background: var(--accent-bg-color);
+  color: var(--accent-text-color);
 }
 
 /* Преимущества */
 .features .title {
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 /* Чем мы занимаемся */
 
 /* Наша команда */
-
 .team .title {
   color: var(--title-text-color);
 }
@@ -152,21 +143,20 @@ d d .page-header {
 }
 
 /* Футер */
-
 .page-footer {
-  background: var(--accent-dg-color);
+  background: var(--accent-bg-color);
 }
 .page-footer .link:hover,
 .page-footer .link:focus {
-  color: #2196f3;
+  color: var(--accent-link-color);
 }
 .colortext.footer {
-  color: var(--accent-color);
+  color: var(--accent-text-color);
 }
 .adress.footer {
   font-size: 14px;
   line-height: 1.7;
-  color: var(--accent-color);
+  color: var(--accent-text-color);
   font-style: normal;
 }
 
@@ -176,6 +166,24 @@ d d .page-header {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-style: normal;
+}
+
+/* portfolio page */
+.projects.title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.projects.text {
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--primari-text-color);
+}
+.projects.link {
+  text-decoration: none;
 }
 /* .list {
   list-style: none;
