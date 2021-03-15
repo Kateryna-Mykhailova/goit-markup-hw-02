@@ -1,6 +1,185 @@
+/* Raleway 700
 
+Roboto 500 900 700 400 */
 
+/* цвет основного цвета #212121; */
+/* цвет контактов хеддер #757575; */ /* цвет абзаца наши преимущества, наша команда  #757575 */
+/* цвет лого #2196F3 */
+/* цвет герой #FFFFFF */
+/* цвет адрес футер #FFFFFF */
+/* цвет контактов футер color: rgba(255, 255, 255, 0.6); */
+/* кнопки background: #2196F3; текст кнопки #FFFFFF */
 
-Raleway 700
+/* поставить комментарии */
+:root {
+  --primari-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #ffffff;
+  --accent-dg-color: #2f303a;
+}
 
-Roboto 500 900 700 400
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--primari-text-color);
+  background: #e5e5e5;
+  letter-spacing: 0.03em;
+}
+
+.logo {
+  font-family: Raleway, cursive;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.colortext.header {
+  color: var(--title-text-color);
+}
+/* button */
+.button.secondary {
+  color: var(--title-text-color);
+  background: #f5f4fa;
+}
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--accent-color);
+  background: #2196f3;
+}
+
+.button.primari {
+  color: var(--accent-color);
+  background: #2196f3;
+}
+
+.button.primari:hover,
+.button.primari:focus {
+  color: var(--accent-color);
+  background: #188ce8;
+}
+.button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Шапка */
+d d .page-header {
+  background: #ffffff;
+}
+/*Навигация*/
+.site-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+.site-nav .link.current {
+  color: #2196f3;
+}
+/* Контакты */
+
+.contacts .link:hover,
+.contacts .link:focus {
+  color: #2196f3;
+}
+
+.header .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+}
+
+/* Уникальный контент */
+.section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-text-color);
+}
+.section-title .features {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+/* Герой */
+.hero {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--accent-dg-color);
+  color: var(--accent-color);
+}
+
+/* Преимущества */
+.features .title {
+  color: #212121;
+}
+
+/* Чем мы занимаемся */
+
+/* Наша команда */
+
+.team .title {
+  color: var(--title-text-color);
+}
+.title.team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* Футер */
+
+.page-footer {
+  background: var(--accent-dg-color);
+}
+.page-footer .link:hover,
+.page-footer .link:focus {
+  color: #2196f3;
+}
+.colortext.footer {
+  color: var(--accent-color);
+}
+.adress.footer {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--accent-color);
+  font-style: normal;
+}
+
+.footer .link {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-style: normal;
+}
+/* .list {
+  list-style: none;
+} */
+ul {
+  list-style: none;
+}

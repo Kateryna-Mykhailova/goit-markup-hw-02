@@ -9,34 +9,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <!--Шапка-->
-    <header>
+    <header class="page-header">
         <nav>
-            <a href="/">
+            <a href="./index.html" class="logo">
                 WebStudio
             </a>
-            <ul>
-                <li><a href="./index.html">Студия</a></li>
-                <li><a href="./portfolio.html">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
+            <!--Навигация-->
+            <ul class="site-nav list">
+                <li><a class="link" href="./index.html">Студия</a></li>
+                <li><a class="link current" href="./portfolio.html">Портфолио</a></li>
+                <li><a class="link" href="">Контакты</a></li>
             </ul>
         </nav>
-
-        <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+    <!--Контакты-->
+        <ul class="contacts list">
+            <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </header>
-
+<!--Уникальный контент-->
     <main>
 
         <!--Фильтры-->
         <ul>
             <li>
-            <button type="button">Все</button>
+            <button class="button" type="button">Все</button>
             <button type="button">Веб-сайты</button>
             <button type="button">Приложения</button>
             <button type="button">Дизайн</button>
@@ -126,8 +128,8 @@
         </address>
 
         <address>
-            <a href="mailto:info@example.com">info@example.com</a> <br />
-            <a href="tel:+380991111111">+38 099 111 11 11</a>
+            <a class="active-link" href="mailto:info@example.com">info@example.com</a> <br />
+            <a class="active-link" href="tel:+380991111111">+38 099 111 11 11</a>
         </address>
 
     </footer>
