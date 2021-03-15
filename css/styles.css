@@ -26,7 +26,7 @@ body {
   text-decoration: none;
 }
 
-.colortext.header {
+.colortext-header {
   color: var(--title-text-color);
 }
 
@@ -83,12 +83,12 @@ body {
 }
 
 /* Контакты */
-.contacts .link:hover,
-.contacts .link:focus {
+.contacts-header .link:hover,
+.contacts-header .link:focus {
   color: var(--accent-link-color);
 }
 
-.header .link {
+.contacts-header .link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -126,20 +126,19 @@ body {
 }
 
 /* Преимущества */
-.features .title {
+.features-title {
   color: var(--title-text-color);
 }
 
 /* Чем мы занимаемся */
 
 /* Наша команда */
-.team .title {
-  color: var(--title-text-color);
-}
-.title.team {
+
+.title-team {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
+  color: var(--title-text-color);
 }
 
 /* Футер */
@@ -150,17 +149,20 @@ body {
 .page-footer .link:focus {
   color: var(--accent-link-color);
 }
-.colortext.footer {
+.colortext-footer {
   color: var(--accent-text-color);
 }
-.adress.footer {
+.adress-footer {
   font-size: 14px;
   line-height: 1.7;
   color: var(--accent-text-color);
   font-style: normal;
 }
-
-.footer .link {
+.contacts-footer .link:hover,
+.contacts-footer .link:focus {
+  color: var(--accent-link-color);
+}
+.contacts-footer .link {
   font-size: 14px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
@@ -169,7 +171,7 @@ body {
 }
 
 /* portfolio page */
-.projects.title {
+.projects-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -177,12 +179,12 @@ body {
   color: var(--title-text-color);
 }
 
-.projects.text {
+.projects-text {
   font-size: 16px;
   line-height: 1.9;
   color: var(--primari-text-color);
 }
-.projects.link {
+.projects-link {
   text-decoration: none;
 }
 /* .list {
